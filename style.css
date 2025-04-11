@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .tenor-gif-embed {
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #111;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.btn a:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .btn a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
